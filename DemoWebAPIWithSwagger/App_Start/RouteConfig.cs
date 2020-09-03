@@ -7,6 +7,8 @@ using System.Web.Routing;
 
 namespace DemoWebAPIWithSwagger
 {
+    
+    #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
     public class RouteConfig
     {
         public static void RegisterRoutes(RouteCollection routes)

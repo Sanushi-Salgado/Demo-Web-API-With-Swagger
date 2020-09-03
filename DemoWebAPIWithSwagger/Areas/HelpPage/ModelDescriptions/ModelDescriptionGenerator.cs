@@ -86,7 +86,9 @@ namespace DemoWebAPIWithSwagger.Areas.HelpPage.ModelDescriptions
 
         private Lazy<IModelDocumentationProvider> _documentationProvider;
 
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
         public ModelDescriptionGenerator(HttpConfiguration config)
+#pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
         {
             if (config == null)
             {
@@ -97,7 +99,9 @@ namespace DemoWebAPIWithSwagger.Areas.HelpPage.ModelDescriptions
             GeneratedModels = new Dictionary<string, ModelDescription>(StringComparer.OrdinalIgnoreCase);
         }
 
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
         public Dictionary<string, ModelDescription> GeneratedModels { get; private set; }
+#pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
 
         private IModelDocumentationProvider DocumentationProvider
         {
@@ -107,7 +111,9 @@ namespace DemoWebAPIWithSwagger.Areas.HelpPage.ModelDescriptions
             }
         }
 
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
         public ModelDescription GetOrCreateModelDescription(Type modelType)
+#pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
         {
             if (modelType == null)
             {

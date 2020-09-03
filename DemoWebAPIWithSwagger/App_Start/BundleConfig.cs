@@ -3,6 +3,8 @@ using System.Web.Optimization;
 
 namespace DemoWebAPIWithSwagger
 {
+    
+    #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
     public class BundleConfig
     {
         // For more information on bundling, visit https://go.microsoft.com/fwlink/?LinkId=301862

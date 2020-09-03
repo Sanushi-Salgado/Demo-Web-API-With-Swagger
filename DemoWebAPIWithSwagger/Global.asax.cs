@@ -9,9 +9,13 @@ using System.Web.Routing;
 
 namespace DemoWebAPIWithSwagger
 {
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
     public class WebApiApplication : System.Web.HttpApplication
+#pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
     {
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
         protected void Application_Start()
+#pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
         {
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);

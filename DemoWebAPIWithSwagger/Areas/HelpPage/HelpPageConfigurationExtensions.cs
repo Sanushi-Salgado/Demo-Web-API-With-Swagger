@@ -16,7 +16,9 @@ using DemoWebAPIWithSwagger.Areas.HelpPage.Models;
 
 namespace DemoWebAPIWithSwagger.Areas.HelpPage
 {
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
     public static class HelpPageConfigurationExtensions
+#pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
     {
         private const string ApiModelPrefix = "MS_HelpPageApiModel_";
 

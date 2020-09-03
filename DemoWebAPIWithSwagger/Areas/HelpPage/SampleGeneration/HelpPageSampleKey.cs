@@ -123,14 +123,18 @@ namespace DemoWebAPIWithSwagger.Areas.HelpPage
         /// </summary>
         public HashSet<string> ParameterNames { get; private set; }
 
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
         public Type ParameterType { get; private set; }
+#pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
 
         /// <summary>
         /// Gets the <see cref="SampleDirection"/>.
         /// </summary>
         public SampleDirection? SampleDirection { get; private set; }
 
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
         public override bool Equals(object obj)
+#pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
         {
             HelpPageSampleKey otherKey = obj as HelpPageSampleKey;
             if (otherKey == null)
@@ -146,7 +150,9 @@ namespace DemoWebAPIWithSwagger.Areas.HelpPage
                 ParameterNames.SetEquals(otherKey.ParameterNames);
         }
 
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
         public override int GetHashCode()
+#pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
         {
             int hashCode = ControllerName.ToUpperInvariant().GetHashCode() ^ ActionName.ToUpperInvariant().GetHashCode();
             if (MediaType != null)
